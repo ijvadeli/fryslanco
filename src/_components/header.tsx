@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import UserIcon from "./svgs/user";
 
 export function Header() {
   return (
@@ -67,7 +68,7 @@ export function Header() {
             />
           </div>
           <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
-            Aan de slag
+            <UserIcon />
           </Button>
         </div>
       </div>
