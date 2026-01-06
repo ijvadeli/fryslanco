@@ -68,7 +68,7 @@ export function Header() {
             />
           </div>
           <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
-            <UserIcon />
+            Aan de slag
           </Button>
         </div>
       </div>
