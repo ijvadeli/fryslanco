@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./components/_ui/accordion"
+} from "./_components/ui/accordion"
 
 export default function Home() {
   return (
