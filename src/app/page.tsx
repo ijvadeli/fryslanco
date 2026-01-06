@@ -5,9 +5,12 @@ import {
   AccordionTrigger,
 } from "@/src/_components/ui/accordion";
 
+import { Header } from "@/src/_components/header";
+
 export default function Home() {
   return (
     <>
+    <Header />
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
