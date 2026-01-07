@@ -1,4 +1,5 @@
-import { ArrowBigUpDash, MessageSquareShare } from 'lucide-react';
+// import { ArrowBigUpDash, MessageSquareShare } from 'lucide-react';
+import ArrowUp from "../svgs/arrowup"
 
 import {
   ToggleGroup,
@@ -13,17 +14,17 @@ export function ToggleGroupSpacing() {
         aria-label="Toggle star"
         className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-yellow-500 data-[state=on]:*:[svg]:stroke-yellow-500"
       >
-        <ArrowBigUpDash />
-        6.2K Vote
+        <ArrowUp />
+       6.2K Vote
       </ToggleGroupItem>
-      <ToggleGroupItem
+      {/* <ToggleGroupItem
         value="heart"
         aria-label="Toggle heart"
         className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-white data-[state=on]:*:[svg]:stroke-blue-500"
       >
         <MessageSquareShare />
         Share
-      </ToggleGroupItem>
+      </ToggleGroupItem> */}
     </ToggleGroup>
   )
 }
