@@ -1,6 +1,6 @@
 "use client";
 
-import { Filter } from "lucide-react";
+import FilterIcon from "./svgs/filter";
 import LayoutGrid from "./svgs/layoutgrid";
 import ListIcon from "./svgs/list";
 import { cn } from "@/lib/utils";
@@ -128,7 +128,7 @@ export function FilterBar({ className }: FilterBarProps) {
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <button className="flex items-center justify-center bg-[#F5F5F5] p-2.5 rounded-[40px] text-gray-500 hover:text-gray-700 transition-colors">
-            <Filter className="h-4 w-4" />
+            <FilterIcon />
           </button>
 
           <div className="h-5 w-px bg-gray-200" />
