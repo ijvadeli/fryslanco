@@ -133,7 +133,7 @@ export function FilterBar({ className }: FilterBarProps) {
 
           <div className="h-5 w-px bg-gray-200" />
 
-          <nav className="hidden md: flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-6">
             {categories.map((category) => (
               <button
                 key={category}
