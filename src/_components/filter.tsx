@@ -136,7 +136,7 @@ export function FilterBar({ className }: FilterBarProps) {
           <nav className="hidden md:flex items-center gap-6">
             {categories.map((category) => (
               <button
-                key={category}
+                
                 onClick={() =>
                   setActiveCategory(
                     activeCategory === category ? null : category
