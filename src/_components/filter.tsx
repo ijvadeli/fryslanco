@@ -1,8 +1,9 @@
 "use client";
 
-import { Filter, LayoutGrid, List } from "lucide-react";
+import { Filter } from "lucide-react";
+import LayoutGrid from "./svgs/layoutgrid";
+import ListIcon from "./svgs/list";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const categories = [
@@ -56,7 +57,7 @@ export function ViewToggle({
         )}
         aria-label="Grid view"
       >
-        <svg
+        {/* <svg
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -99,7 +100,8 @@ export function ViewToggle({
             stroke="currentColor"
             strokeWidth="1.5"
           />
-        </svg>
+        </svg> */}
+        <LayoutGrid />
       </button>
 
       {/* List button */}
@@ -111,22 +113,7 @@ export function ViewToggle({
         )}
         aria-label="List view"
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {/* Dots */}
-          <circle cx="3" cy="4" r="1.5" fill="currentColor" />
-          <circle cx="3" cy="10" r="1.5" fill="currentColor" />
-          <circle cx="3" cy="16" r="1.5" fill="currentColor" />
-          {/* Lines */}
-          <rect x="7" y="3" width="11" height="2" rx="1" fill="currentColor" />
-          <rect x="7" y="9" width="11" height="2" rx="1" fill="currentColor" />
-          <rect x="7" y="15" width="11" height="2" rx="1" fill="currentColor" />
-        </svg>
+        <ListIcon />
       </button>
     </div>
   );
