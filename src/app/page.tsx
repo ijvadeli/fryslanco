@@ -6,12 +6,12 @@ import NewsSection from "../_components/home/news";
 
 export default function Home() {
   return (
-    <>
+    <div className="mx-30">
     <Header />
     <HeroSection />
     <FilterBar />
     <CompanyList />
     <NewsSection />
-    </>
+    </div>
   );
 }

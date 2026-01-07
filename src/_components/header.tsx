@@ -15,7 +15,7 @@ import UserIcon from "./svgs/user";
 export function Header() {
   return (
     <header className="w-full border-b bg-white">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2">
             
@@ -58,9 +58,9 @@ export function Header() {
             </Link>
           </nav>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex gap-4">
           <div className="relative hidden sm:block">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
             <Input
               type="search"
               placeholder="Search company"

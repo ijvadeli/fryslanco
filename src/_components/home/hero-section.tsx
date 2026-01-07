@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section>
       <div className="bg-background py-16 lg:py-24">
-        <div className="mx-auto lg:mx-32 max-w-8xl ">
+        <div className="">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div className="flex items-center flex-col lg:items-start">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
