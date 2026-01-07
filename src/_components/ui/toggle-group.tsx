@@ -14,7 +14,7 @@ export function ToggleGroupSpacing() {
         className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-yellow-500 data-[state=on]:*:[svg]:stroke-yellow-500"
       >
         <ArrowBigUpDash />
-        Vote
+        6.2K Vote
       </ToggleGroupItem>
       <ToggleGroupItem
         value="heart"
