@@ -12,7 +12,7 @@ export function ToggleGroupSpacing() {
       <ToggleGroupItem
         value="star"
         aria-label="Toggle star"
-        className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-yellow-500 data-[state=on]:*:[svg]:stroke-yellow-500"
+        className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-black data-[state=on]:*:[svg]:stroke-black"
       >
         <ArrowUp />
        6.2K Vote
