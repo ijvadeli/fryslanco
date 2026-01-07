@@ -124,7 +124,7 @@ export function FilterBar({ className }: FilterBarProps) {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   return (
-    <div className={cn("w-full border-b bg-white py-3", className)}>
+    <div className={cn("w-full bg-white py-3", className)}>
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <button className="flex items-center justify-center bg-[#F5F5F5] p-2.5 rounded-[40px] text-gray-500 hover:text-gray-700 transition-colors">
