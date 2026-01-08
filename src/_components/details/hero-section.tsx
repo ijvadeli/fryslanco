@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ToggleGroupSpacing } from "../ui/toggle-group";
+import ToggleGroupSpacing from "../ui/toggle-group";
 import PlaceholderLogo from "../svgs/logo";
 
 export function HeroSection() {
@@ -14,7 +14,7 @@ export function HeroSection() {
           </Link>
             <div className="flex items-center float-right">
                 <div className="absolute hidden sm:block">
-                    <ToggleGroupSpacing />
+                    <ToggleGroupSpacing value="69420"/>
                 </div>
             </div>
         </div>
