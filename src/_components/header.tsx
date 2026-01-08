@@ -11,7 +11,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LoginForm } from "./login/login-form";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,7 +18,7 @@ export function Header() {
 
   return (
     <header className="w-full border-b bg-white mb-4 md:mb-10">
-      <div className="container mx-auto flex h-14 md:h-16 items-center justify-between px-4">
+      <div className="container flex h-14 md:h-16 items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-4 lg:gap-8">
           <Link href="/" className="flex items-center gap-2">
@@ -75,9 +74,11 @@ export function Header() {
               className="w-48 pl-9 bg-gray-100 border-0 focus-visible:ring-1"
             />
           </div>
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
-            <Link href="/login">Aan de Slag</Link>
-          </Button>
+          <Link href="/login">
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
+              Aan de Slag
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Right Section */}
@@ -95,7 +96,7 @@ export function Header() {
 
           {/* Mobile CTA - shortened text on small screens */}
           <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-3 md:px-6 text-sm">
-            <span className="hidden sm:inline">Aan de slag</span>
+            <Link href="/login"><span className="hidden sm:inline">Aan de slag</span></Link>
             <span className="sm:hidden">Start</span>
           </Button>
 
