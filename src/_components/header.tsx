@@ -17,15 +17,16 @@ export function Header() {
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   return (
-    <header className="w-full border-b bg-white mb-4 md:mb-10">
-      <div className="container flex h-14 md:h-16 items-center justify-between px-4">
-        {/* Logo */}
+    <header className="w-full border-b bg-white mb-4 md:mb-1">
+      <div className="container flex h-14 md:h-16 items-center justify-between px-4 lg:mx-47 lg:w-[78%] sm:mx-7">
         <div className="flex items-center gap-4 lg:gap-8">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="Fryslan+co Logo" className="w-24 md:w-32" />
+            <img
+              src="/logo.png"
+              alt="Fryslan+co Logo"
+              className="w-24 md:w-32"
+            />
           </Link>
-
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover:text-gray-600 transition-colors">
@@ -63,8 +64,6 @@ export function Header() {
             </Link>
           </nav>
         </div>
-
-        {/* Desktop Right Section */}
         <div className="hidden lg:flex items-center gap-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
@@ -96,7 +95,9 @@ export function Header() {
 
           {/* Mobile CTA - shortened text on small screens */}
           <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-3 md:px-6 text-sm">
-            <Link href="/login"><span className="hidden sm:inline">Aan de slag</span></Link>
+            <Link href="/login">
+              <span className="hidden sm:inline">Aan de slag</span>
+            </Link>
             <span className="sm:hidden">Start</span>
           </Button>
 

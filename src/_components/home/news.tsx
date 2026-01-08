@@ -37,7 +37,7 @@ const newsData: NewsItem[] = [
 
 export default function NewsSection() {
   return (
-    <section className="max-w-8xl w-[90%] mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <section className="max-w-9xl w-full mx-auto px-4 py-8 sm:px-6 lg:px-2">
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
         Nieuws
       </h2>

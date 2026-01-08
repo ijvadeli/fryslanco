@@ -13,7 +13,7 @@ const ToggleGroupSpacing: React.FC<ToggleGroupSpacingProps> = ({value}) => {
       <ToggleGroupItem
         value="star"
         aria-label="Toggle star"
-        className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-black data-[state=on]:*:[svg]:stroke-black"
+        className="text-sm data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-black data-[state=on]:*:[svg]:stroke-black"
       >
         <ArrowUp />
         {value}
