@@ -15,12 +15,12 @@ export default function HeroSection() {
                 <span>Net als 17. 500+ anderen</span>
               </div>
 
-              <h1 className="text-foreground text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight">
+              <h1 className="text-foreground text-2xl sm:text-3xl lg:text-[32px] font-semibold leading-tight">
                 Dé plek om Friese bedrijven
                 <br className="hidden sm:block" />
                 <span className="sm: hidden"> </span>
                 en organisaties te{" "}
-                <span className="text-foreground">ontdekken. </span>
+                <span className="text-black/50">ontdekken. </span>
               </h1>
 
               <form className="mt-6 sm:mt-8 flex flex-col sm: md:flex-row gap-3 sm:gap-5 w-full max-w-md">
