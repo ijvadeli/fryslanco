@@ -8,14 +8,14 @@ const companiesFeatured = [
 ];
 
 const topCompanies = [
-  { name: "Formance", category: "Inspections", rating: "6.9" },
+  { name: "Formance", category: "Inspections", rating: "6.9K" },
   { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2K" },
   { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2K" },
 ];
 
 const CompanyList = () => {
   return (
-    <div className="p-4 mx-20">
+    <div className="mx-5 md:mx-0">
       {/* Uitgelichte bedrijven blok */}
       <h2 className="text-2xl font-semibold mb-4">Uitgelichte bedrijven</h2>
       {companiesFeatured.map((company, index) => (
