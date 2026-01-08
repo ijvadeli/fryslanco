@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { LoginForm } from "./login/login-form";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,7 +76,7 @@ export function Header() {
             />
           </div>
           <Button className="bg-gray-900 hover:bg-gray-800 text-white rounded-full px-6">
-            Aan de slag
+            <Link href="/login">Aan de Slag</Link>
           </Button>
         </div>
 

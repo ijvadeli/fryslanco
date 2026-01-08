@@ -1,5 +1,5 @@
-import PlaceholderLogo from "../svgs/logo";
-import ToggleGroupSpacing from "../ui/toggle-group";
+import PlaceholderLogo from "./svgs/logo";
+import ToggleGroupSpacing from "./ui/toggle-group";
 
 const companiesFeatured = [
   { name: "Councile Studio", category: "Design - Development - Animation", rating: "6.2K" },
