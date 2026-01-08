@@ -3,7 +3,11 @@ import ArrowUp from "../svgs/arrowup";
 
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
-export function ToggleGroupSpacing() {
+interface ToggleGroupSpacingProps {
+    value: string;
+}
+
+const ToggleGroupSpacing: React.FC<ToggleGroupSpacingProps> = ({value}) => {
   return (
     <ToggleGroup type="multiple" variant="outline" spacing={2} size="sm">
       <ToggleGroupItem
@@ -12,6 +16,7 @@ export function ToggleGroupSpacing() {
         className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-black data-[state=on]:*:[svg]:stroke-black"
       >
         <ArrowUp />
+        {value}
       </ToggleGroupItem>
       {/* <ToggleGroupItem
         value="heart"
@@ -24,3 +29,5 @@ export function ToggleGroupSpacing() {
     </ToggleGroup>
   );
 }
+
+export default ToggleGroupSpacing;

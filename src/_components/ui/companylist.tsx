@@ -1,16 +1,16 @@
 import PlaceholderLogo from "../svgs/logo";
-import { ToggleGroupSpacing } from "../ui/toggle-group";
+import ToggleGroupSpacing from "../ui/toggle-group";
 
 const companiesFeatured = [
-  { name: "Councile Studio", category: "Design - Development - Animation", rating: "6.2" },
-  { name: "Marine Engineering", category: "Shipbuilding - Maintenance", rating: "6.2" },
-  { name: "Marine Engineering", category: "Shipbuilding - Maintenance", rating: "6.2" },
+  { name: "Councile Studio", category: "Design - Development - Animation", rating: "6.2K" },
+  { name: "Marine Engineering", category: "Shipbuilding - Maintenance", rating: "6.2K" },
+  { name: "Marine Engineering", category: "Shipbuilding - Maintenance", rating: "6.2K" },
 ];
 
 const topCompanies = [
   { name: "Formance", category: "Inspections", rating: "6.9" },
-  { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2" },
-  { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2" },
+  { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2K" },
+  { name: "Civil Engineering", category: "Bridge Design - Inspections", rating: "9.2K" },
 ];
 
 const CompanyList = () => {
@@ -30,7 +30,7 @@ const CompanyList = () => {
             </div>
           </div>
           {/* <span className="font-bold">{company.rating}</span> */}
-          <ToggleGroupSpacing />
+          <ToggleGroupSpacing value={company.rating}/>
         </div>
       ))}
       {/* Top bedrijven blok */}
@@ -47,7 +47,7 @@ const CompanyList = () => {
             </div>
           </div>
           {/* <span className="font-bold">{company.rating}</span> */}
-          <ToggleGroupSpacing />
+          <ToggleGroupSpacing value={company.rating} />
         </div>
       ))}
     </div>
