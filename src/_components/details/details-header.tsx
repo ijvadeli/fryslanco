@@ -40,7 +40,7 @@ const CompanyProfile: React.FC<CompanyProfileProps> = ({
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
-    <div className="mx-auto max-w-9xl px-5 py-5 font-sans mt-10">
+    <div className="mx-auto max-w-6xl px-5 py-5 font-sans mt-10">
       <Link
         href="/"
         className="font-medium text-[14px] text-gray-900 mb-6 flex items-center justify-start gap-1.5 hover:underline transition"
