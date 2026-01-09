@@ -17,7 +17,7 @@ export function Header() {
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   return (
-    <header className="w-full border-b bg-white mb-4 md:mb-1">
+    <header className="w-full max-w-8xl border-b bg-white mb-4 md:mb-1">
       <div className="container flex h-14 md:h-16 items-center justify-between px-4 lg:mx-47 lg:w-[78%] sm:mx-7">
         <div className="flex items-center gap-4 lg:gap-8">
           <Link href="/" className="flex items-center gap-2">
@@ -27,7 +27,7 @@ export function Header() {
               className="w-24 md:w-32"
             />
           </Link>
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4">
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover:text-gray-600 transition-colors">
                 Industrie
@@ -41,12 +41,12 @@ export function Header() {
             </DropdownMenu>
             <Link
               href="/uitgelicht"
-              className="text-sm font-medium hover: text-gray-600 transition-colors"
+              className="text-sm font-medium hover:text-gray-600 transition-colors"
             >
               Uitgelicht
             </Link>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover: text-gray-600 transition-colors">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium hover:text-gray-600 transition-colors">
                 Locaties
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
@@ -64,7 +64,7 @@ export function Header() {
             </Link>
           </nav>
         </div>
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center ml-4 gap-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
             <Input

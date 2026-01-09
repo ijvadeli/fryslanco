@@ -38,7 +38,7 @@ export default function Home() {
       <div className="">
         <Header />
       </div>
-      <div className="lg:mx-50 mx-10">
+      <div className="lg:mx-40 mx-10">
         <HeroSection {...companyData} />
       </div>
     </>
