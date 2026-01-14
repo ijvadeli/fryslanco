@@ -1,5 +1,6 @@
 import { Header } from "@/src/_components/header";
 import HeroSection from "@/src/_components/details/details-header";
+import Footer from "@/src/_components/global/footer";
 import PlaceholderLogo from "@/src/_components/svgs/logo";
 // import FilterBar from "../_components/filter";
 // import CompanyList from "../_components/companylist";
@@ -41,6 +42,7 @@ export default function Home() {
       <div className="lg:mx-40 mx-10">
         <HeroSection {...companyData} />
       </div>
+      <Footer />
     </>
   );
 }

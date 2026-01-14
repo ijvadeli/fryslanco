@@ -3,6 +3,8 @@ import HeroSection from "../_components/home/hero-section";
 import FilterBar from "../_components/filter";
 import CompanyList from "../_components/companylist";
 import NewsSection from "../_components/home/news";
+import FeaturedVideos from "../_components/home/videos";
+import Footer from "../_components/global/footer";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
     <FilterBar />
     <CompanyList />
     <NewsSection />
+    <FeaturedVideos />
+    <Footer />
     </div>
     </>
   );
